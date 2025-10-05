@@ -1,12 +1,10 @@
 // Iterative
 function fib(n) {
    let seq = [0, 1];
-   if (n <= 2) return seq.slice(0, n);
-
    for (let i = 2; i < n; i++) {
       seq.push(seq[i - 1] + seq[i - 2]);
    }
-   return seq;
+   return seq.slice(0, n);
 }
 
 // Recursive
@@ -18,3 +16,6 @@ function fibRec(n) {
    seq.push(seq[seq.length - 1] + seq[seq.length - 2]);
    return seq;
 }
+
+console.log(fib(2));
+console.log(fib(8));
