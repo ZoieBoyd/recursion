@@ -16,6 +16,3 @@ function fibRec(n) {
    seq.push(seq[seq.length - 1] + seq[seq.length - 2]);
    return seq;
 }
-
-console.log(fib(2));
-console.log(fib(8));
